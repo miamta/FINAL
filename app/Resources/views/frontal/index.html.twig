@@ -1,0 +1,14 @@
+<HTML>
+   <HEAD>
+      <TITLE> Contacto </TITLE>
+   </HEAD>
+   <BODY>
+     <table border=1>
+     {% for usuario in Usuarios %}
+         <th> <p>{{ usuario.id }}</p></th>
+      <th> <p>{{ usuario.nombre }}</p></th>
+      <th>  <p>{{ usuario.apellidos }}</p></th>
+       {% endfor %}
+      </table>
+   </BODY>
+</HTML>
